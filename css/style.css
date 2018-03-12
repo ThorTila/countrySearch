@@ -1,0 +1,25 @@
+body, h1, h2, h3, h4, dl, dt, dd { margin: 0; }
+
+main { min-height: 100vh; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; }
+
+#countries { background: lightgrey; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; color: white; }
+
+.country { background: blue; width: 45%; max-width: 450px; border-radius: 5px; padding: 10px; margin-bottom: 30px; }
+
+h3 { padding: 5%; background: green; }
+
+h4 { background: orange; }
+
+dl { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 2fr; grid-template-columns: 1fr 2fr; }
+
+dt { -ms-grid-column: 1; grid-column: 1; background: red; }
+
+dd { -ms-grid-column: 2; grid-column: 2; background: grey; }
+
+button { background: #2980b9; border: none; color: white; padding: 1%; }
+
+button:hover { background: #20638f; box-shadow: 0 0 5px black; }
+
+input { padding: 1%; }
+
+input:focus { box-shadow: 0 0 5px black; }

@@ -1,0 +1,61 @@
+$buttonColor: #2980b9;
+body, h1, h2, h3, h4, dl, dt, dd {
+    margin: 0;
+}
+main {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#countries {
+    background: lightgrey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+}
+.country {
+    background: blue;
+    width: 45%;
+    max-width: 450px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+h3 {
+    padding: 5%;
+    background: green;
+}
+h4 {
+    background: orange;
+}
+dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+dt {
+    grid-column: 1;
+    background: red;
+}
+dd {
+    grid-column: 2;
+    background: grey;
+}
+button {
+    background: $buttonColor;
+    border: none;
+    color: white;
+    padding: 1%;
+    &:hover {
+        background: darken($buttonColor, 10%);
+        box-shadow: 0 0 5px black;
+    }
+}
+input {
+    padding: 1%;
+    &:focus {
+        box-shadow: 0 0 5px black;
+    }
+}
